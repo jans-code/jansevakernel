@@ -1,0 +1,3 @@
+{"argv":["python","-m","jansevakernel", "-f", "{connection_file}"],
+ "display_name":"eva"
+}
