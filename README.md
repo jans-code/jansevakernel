@@ -5,7 +5,7 @@
 A solid jupyter kernel implementation of [eva](https://github.com/nerdypepper/eva).
 Realised with the IPython Kernel subclass and pexpect.
 
-## Installation
+## Dev Installation
 
 - install eva (i.e. from the Arch community repository)
 - `pip install` jupyterlab and pexpect
