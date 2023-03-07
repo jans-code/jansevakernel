@@ -17,6 +17,8 @@ class jansevakernel(Kernel):
     def do_execute(self, code, silent, store_history=True, user_expressions=None,
                    allow_stdin=False):
         if not silent:            
+            code = code.strip()
+            code = code.replace("\n", " ")
             solution = pexpect.run('eva "'+code+'"').decode('ascii')
             stream_content = {'name': 'stdout', 'text': solution}
             self.send_response(self.iopub_socket, 'stream', stream_content)
