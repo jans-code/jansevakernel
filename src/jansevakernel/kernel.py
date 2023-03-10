@@ -19,12 +19,11 @@ class jansevakernel(Kernel):
         if not silent:            
             code = code.strip()
             code = code.replace("\n", " ")
-            solution = pexpect.run('eva "'+code+'"').decode('ascii')
+            solution = pexpect.run('eva "' + code + '"').decode('ascii')
             stream_content = {'name': 'stdout', 'text': solution}
             self.send_response(self.iopub_socket, 'stream', stream_content)
 
         return {'status': 'ok',
-                # The base class increments the execution count
                 'execution_count': self.execution_count,
                 'payload': [],
                 'user_expressions': {},

@@ -1,14 +1,19 @@
 # jansevakernel
 
-![alt](jansevakernel/logo-svg.svg)
+![Logo](https://raw.githubusercontent.com/jans-code/jansevakernel/main/jansevakernel/logo-svg.svg)
 
-A solid jupyter kernel implementation of [eva](https://github.com/nerdypepper/eva).
-Realised with the IPython Kernel subclass and pexpect.
+A jupyter kernel implementation of [eva](https://github.com/nerdypepper/eva).
+
+## Installation
+
+- install eva (i.e. from the Arch community repository)
+- get the kernel module via pip
+- `pip install jansevakernel`
+- then install kernelspec
+- `jansevakernel`
 
 ## Dev Installation
 
-- install eva (i.e. from the Arch community repository)
-- `pip install` jupyterlab and pexpect
 - download/clone this project
 - open shell in project folder
 - `pip install -e ./`

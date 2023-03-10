@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "jansevakernel"
-version = "0.0.1"
+version = "1.0.0"
 authors = [
   { name="Jan Arman Parpin", email="is@hidden.com" },
 ]
@@ -14,9 +14,17 @@ requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+    "Operating System :: POSIX :: Linux",
+    "Framework :: Jupyter :: JupyterLab :: 3"
+]
+dependencies = [
+    "ipykernel",
+    "pexpect"
 ]
 
 [project.urls]
 "Homepage" = "https://github.com/jans-code/jansevakernel"
 "Bug Tracker" = "https://github.com/jans-code/jansevakernel/issues"
+
+[project.scripts]
+jansevakernel = "jansevakernel.install_kernelspec:install_kernelspec"
